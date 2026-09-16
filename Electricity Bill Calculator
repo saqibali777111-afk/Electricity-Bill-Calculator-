@@ -1,0 +1,16 @@
+# Electricity Bill Calculator 
+
+name = input("enter customer name: ")
+units = int(input("Enter units Consumed: "))
+
+if units <= 100:
+    bill = units * 10
+elif units <= 200:
+    bill = units * 15
+else:
+    bill = units * 20
+
+print("\n-----Electricity Bill -----")
+print("Customer Name:", name) 
+print("units Consumed:", units)
+print("Total Bill: Rs.", bill)
